@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV for Ninelines</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- first section -->
+    <header class="section">
+      <div class="wrapper">
+        <div class="header-photo"></div>
+        <ul class="header-list">
+          <li class="header-item first">Максим</li>
+          <li class="header-item">13.08.1986</li>
+          <li class="header-item">Новосибирск</li>
+          <li class="header-item">+7-913-7500-150</li>
+        </ul>
+      </div>
+      <div class="stamp">
+        <img src="./img/stamp.png" alt="stamp">
+      </div>
+    </header>
+    <!-- second section -->
+    <main class="main section">
+      <table>
+        <caption class="caption">Навыки</caption>
+        <tr>
+          <td>
+            <input data-action="990" class="custom-checkbox" type="checkbox" name="checkbox" id="html">
+            <label for="html">html5</label>
+          </td>
+          <td>
+            <input data-action="700" class="custom-checkbox" type="checkbox" name="checkbox" id="SASS">
+            <label for="SASS">sass</label>
+          </td>
+          <td>
+            <input data-action="800" class="custom-checkbox" type="checkbox" name="checkbox" id="vanillajs">
+            <label for="vanillajs">vanillajs</label>
+          </td>
+          <td>
+            <input data-action="900" class="custom-checkbox" type="checkbox" name="checkbox" id="Git">
+            <label for="Git">git</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input data-action="950" class="custom-checkbox" type="checkbox" name="checkbox" id="CSS3">
+            <label for="CSS3">css3</label>
+          </td>
+          <td>
+            <input data-action="300" class="custom-checkbox" type="checkbox" name="checkbox" id="Less">
+            <label for="Less">less</label>
+          </td>
+          <td>
+            <input data-action="200" class="custom-checkbox" type="checkbox" name="checkbox" id="Angular">
+            <label for="Angular">angular</label>
+          </td>
+          <td>
+            <input data-action="100" class="custom-checkbox" type="checkbox" name="checkbox" id="foundation">
+            <label for="foundation">foundation</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input data-action="900" class="custom-checkbox" type="checkbox" name="checkbox" id="БЭМ">
+            <label for="БЭМ">бэм</label>
+          </td>
+          <td>
+            <input data-action="600" class="custom-checkbox" type="checkbox" name="checkbox" id="Gulp">
+            <label for="Gulp">gulp</label>
+          </td>
+          <td>
+            <input data-action="600" class="custom-checkbox" type="checkbox" name="checkbox" id="Jquery">
+            <label for="Jquery">jquery</label>
+          </td>
+          <td>
+            <input data-action="600" class="custom-checkbox p600" type="checkbox" name="checkbox" id="Bootstrap">
+            <label for="Bootstrap">bootstrap</label>
+          </td>
+        </tr>
+      </table>
+    </main>
+    <!-- third section -->
+    <footer class="footer section">
+      <div class="barometer">
+        <img src="./img/barometr.png" alt="barometer">
+        <!-- <img class="arrow" src="./img/barometr-arrow.png" alt="arrow"> -->
+      </div>
+      <div class="value">
+        <div class="value-title">Мой уровень владения</div>
+        <div class="value-skill">Java Script</div>
+        <div id="value-number"></div>
+      </div>
+
+    </footer>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>

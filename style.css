@@ -1,0 +1,276 @@
+* {
+  font-family: 'Roboto',
+    sans-serif;
+}
+
+body {
+  background-image: url("./img/bg.png");
+}
+
+.container {
+  max-width: 1000px;
+  height: 914px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 59px;
+  margin: 0 auto;
+}
+
+.section {
+  width: 661px;
+  height: 251px;
+  background-color: #ffffff;
+  margin-bottom: 2px;
+
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 31px;
+}
+
+.header-photo {
+  width: 140px;
+  height: 137px;
+  border-radius: 50%;
+  background-image: url("./img/photo.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+
+}
+
+.header-list {
+  margin: 0;
+  padding: 0;
+}
+
+
+.header-item {
+  width: 461px;
+  font-size: 12px;
+  color: #666666;
+  list-style: none;
+  text-transform: uppercase;
+  border-bottom: 2px solid #333;
+  padding-bottom: 6px;
+  line-height: 11px;
+}
+
+.header-item:not(.first) {
+  padding-top: 37px;
+}
+
+.header-item:hover {
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+}
+
+.stamp {
+  width: 185px;
+  height: 167px;
+  position: absolute;
+  top: 14.4%;
+  left: 57.5%;
+}
+
+.stamp:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  -webkit-transition: 0.7s all;
+  -o-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+table {
+  display: block;
+  margin-left: 14px;
+  margin-top: 31px;
+}
+
+.caption {
+  font-size: 18px;
+  text-align: left;
+  padding-left: 8px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+td {
+  width: 155px;
+  height: 10px;
+  padding-bottom: 25px;
+
+}
+
+input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+
+}
+
+label {
+  height: 100%;
+  display: inline-block;
+  vertical-align: super;
+  font-size: 12px;
+  color: #666666;
+  line-height: 9px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 5px;
+  font-weight: 600;
+}
+
+label:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0.7;
+  color: #0093D7;
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-color: #eeecee;
+  border-radius: 0.55em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.custom-checkbox:checked+label::before {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  border-color: #0093D7;
+  background-color: #0093D7;
+}
+
+.footer {
+  display: flex;
+  justify-content: left;
+}
+
+.barometer {
+  padding-top: 55px;
+  padding-left: 20px;
+}
+
+.value {
+  padding-top: 62px;
+  padding-left: 67px;
+}
+
+.value-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.value-skill {
+  padding-top: 2px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#value-number {
+  color: #0093D7;
+  font-size: 50px;
+  font-weight: 900;
+  padding-top: 10px;
+}
+
+@media(max-width: 670px) {
+  .header-item {
+    width: 300px;
+  }
+
+  .stamp {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+  }
+
+  .caption {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  table tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+  }
+
+  table td {
+    display: flex;
+    align-items: center;
+    width: 110px;
+    font-size: 14px;
+  }
+
+
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .barometer {
+    padding-top: 15px;
+  }
+
+  .value {
+    margin-top: 0;
+    padding-top: 32px;
+
+  }
+}
+
+@media(max-width: 500px) {
+  .wrapper {
+    justify-content: center;
+  }
+
+  .header-photo {
+    background-image: none;
+  }
+
+  .stamp {
+    display: none;
+  }
+
+}
+
+@media(max-width: 320px) {}
